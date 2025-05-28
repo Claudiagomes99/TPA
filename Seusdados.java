@@ -17,8 +17,8 @@ public class Seusdados {
     System.out.print("Digite seu nome: ");
     String nome = scanner.nextLine();
 
-    System.out.print("Digite data de nascimento: ");
-    int aniversario = scanner.nextInt();
+    System.out.print("Digite data de nascimento (DD/MM/AAAA):");
+    String aniversario = scanner.nextLine();
     scanner.nextLine(); // Consumir o caractere de nova linha
 
     System.out.print("Digite seu curso: ");
@@ -30,16 +30,16 @@ public class Seusdados {
     System.out.print("Altura:");
     String altura = scanner.nextLine();
     
-    System.out.print("Peso");
+    System.out.print("Peso ( em kg):");
     String peso = scanner.nextLine();
 
-    System.out.println("\nDados do usuário:");
+    System.out.println("Dados do usuário:");
     System.out.println("Nome: " + nome);
     System.out.println("Data de Nacimento: " + aniversario);
     System.out.println("Curso: " + curso);
     System.out.println("Série: " + serie);
-    System.out.println("Altura: " + altura);
-    System.out.println("Peso: " + peso);
+    System.out.println("Altura: " + altura + "m");
+    System.out.println("Peso: " + peso + "kg");
 
     scanner.close();
     }
